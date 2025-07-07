@@ -1,0 +1,26 @@
+# Redeemify Messages Configuration
+# Plugin by Michael Brauer (Mxykl)
+# Use & for color codes
+
+messages:
+  # Command messages
+  player-only: "&cThis command can only be used by players!"
+  no-permission: "&cYou don't have permission to use this command!"
+  usage-redeem: "&cUsage: /redeem <code>"
+  
+  # Code redemption messages
+  code-redeemed: "&aSuccessfully redeemed code: &e%code%&a!"
+  invalid-code: "&cInvalid code! Please check your spelling."
+  code-expired: "&cThis code has expired and can no longer be used."
+  already-redeemed: "&cYou have already redeemed this code!"
+  max-uses-reached: "&cThis code has reached its maximum usage limit."
+  
+  # Admin messages
+  config-reloaded: "&aRedeemify configuration has been reloaded!"
+  
+  # Error messages
+  error-occurred: "&cAn error occurred while processing your request."
+  command-failed: "&cFailed to execute reward command. Please contact an administrator."
+  
+  # Success messages
+  rewards-given: "&aYour rewards have been given!"

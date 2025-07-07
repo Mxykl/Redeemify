@@ -1,0 +1,32 @@
+name: Redeemify
+version: '${project.version}'
+main: de.michaelbrauer.redeemify.Redeemify
+api-version: '1.21'
+author: Michael Brauer (Mxykl)
+description: A Paper plugin for redeeming codes with rewards
+website: https://github.com/Mxykl/Redeemify
+
+commands:
+  redeem:
+    description: Redeem a code for rewards
+    usage: /redeem <code>
+    permission: redeemify.redeem
+  redeemify:
+    description: Main plugin command for administration
+    usage: /redeemify <reload|info>
+    permission: redeemify.admin
+    aliases: [rd]
+
+permissions:
+  redeemify.redeem:
+    description: Allows players to redeem codes
+    default: true
+  redeemify.admin:
+    description: Allows access to admin commands
+    default: op
+  redeemify.*:
+    description: Gives access to all Redeemify permissions
+    default: op
+    children:
+      redeemify.redeem: true
+      redeemify.admin: true

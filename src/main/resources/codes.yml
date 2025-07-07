@@ -1,0 +1,46 @@
+# Redeemify Codes Configuration
+# Plugin by Michael Brauer (Mxykl)
+
+# Code format:
+# codes:
+#   code-name:
+#     expires: "2025-06-29 14:00"  # Date format: yyyy-MM-dd HH:mm, use -1 for no expiration
+#     max-uses: 100                # Maximum total uses, use -1 for unlimited
+#     per-player: true             # true = each player can only use once, false = players can use multiple times
+#     commands:                    # List of commands to execute (use %player% placeholder)
+#       - "eco give %player% 1000"
+#       - "lp user %player% parent add premium 30d"
+
+codes:
+  # Example codes - you can modify or remove these
+  example-code:
+    expires: "2025-06-29 14:00"
+    max-uses: 100
+    per-player: true
+    commands:
+      - "eco give %player% 1000"
+      - "lp user %player% parent add premium 30d"
+      
+  another-example-code:
+    expires: "2025-12-31 23:59"
+    max-uses: 50
+    per-player: true
+    commands:
+      - "eco give %player% 500"
+      - "give %player% diamond 5"
+      
+  unlimited-code:
+    expires: "-1"
+    max-uses: -1
+    per-player: false
+    commands:
+      - "eco give %player% 100"
+      
+  welcome-gift:
+    expires: "-1"
+    max-uses: -1
+    per-player: true
+    commands:
+      - "kit give starter %player%"
+      - "eco give %player% 2500"
+      - "tell %player% Welcome to our server! Enjoy your starter kit!"
