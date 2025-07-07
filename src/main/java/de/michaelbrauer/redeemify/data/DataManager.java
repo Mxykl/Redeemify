@@ -63,7 +63,7 @@ public class DataManager {
     private void loadInMemoryData() {
         // Load player redeemed codes
         playerRedeemed.clear();
-        if (playerData.getConfigurationSection("players") != null) {
+        if (playerData != null && playerData.getConfigurationSection("players") != null) {
             for (String playerUUID : playerData.getConfigurationSection("players").getKeys(false)) {
                 List<String> codes = playerData.getStringList("players." + playerUUID + ".redeemed");
                 playerRedeemed.put(playerUUID, new HashSet<>(codes));
@@ -72,7 +72,7 @@ public class DataManager {
 
         // Load code usage counts
         codeUsages.clear();
-        if (usageData.getConfigurationSection("codes") != null) {
+        if (usageData != null && usageData.getConfigurationSection("codes") != null) {
             for (String code : usageData.getConfigurationSection("codes").getKeys(false)) {
                 int usage = usageData.getInt("codes." + code + ".uses", 0);
                 codeUsages.put(code, usage);
@@ -81,8 +81,10 @@ public class DataManager {
     }
 
     public void saveData() {
-        savePlayerData();
-        saveUsageData();
+        if (playerData != null && usageData != null) {
+            savePlayerData();
+            saveUsageData();
+        }
     }
 
     private void savePlayerData() {

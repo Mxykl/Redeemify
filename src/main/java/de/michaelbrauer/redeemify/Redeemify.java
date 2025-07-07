@@ -17,16 +17,18 @@ public final class Redeemify extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Initialize managers
+        // Initialize managers in correct order
         this.configManager = new ConfigManager(this);
         this.dataManager = new DataManager(this);
-        this.codeManager = new CodeManager(this);
 
-        // Load configurations
+        // Load configurations first
         configManager.loadConfigs();
         
         // Load data
         dataManager.loadData();
+
+        // Initialize CodeManager AFTER configs are loaded
+        this.codeManager = new CodeManager(this);
 
         // Register commands
         registerCommands();
@@ -57,6 +59,7 @@ public final class Redeemify extends JavaPlugin {
     public void reload() {
         configManager.loadConfigs();
         dataManager.loadData();
+        codeManager.loadCodes();
         getLogger().info("Redeemify configuration reloaded!");
     }
 
