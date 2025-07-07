@@ -1,7 +1,8 @@
 name: Redeemify
 version: '${project.version}'
 main: de.michaelbrauer.redeemify.Redeemify
-api-version: '1.21'
+# Für 1.20.x Kompatibilität
+api-version: '1.20'
 author: Michael Brauer (Mxykl)
 description: A Paper plugin for redeeming codes with rewards
 website: https://github.com/Mxykl/Redeemify
