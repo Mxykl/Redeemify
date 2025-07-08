@@ -1,0 +1,110 @@
+# Spanish Language File for Redeemify
+# Plugin by Michael Brauer (Mxykl)
+
+language:
+  display-name: "Español"
+  code: "es_ES"
+
+messages:
+  # Command messages
+  player-only: "&c¡Este comando solo puede ser usado por jugadores!"
+  no-permission: "&c¡No tienes permisos para usar este comando!"
+  usage-redeem: "&cUso: /redeem <código>"
+  
+  # Code redemption messages
+  code-redeemed: "&a¡Código canjeado exitosamente: &e%code%&a!"
+  invalid-code: "&c¡Código inválido! Por favor verifica la ortografía."
+  code-expired: "&cEste código ha expirado y ya no puede ser usado."
+  already-redeemed: "&c¡Ya has canjeado este código!"
+  max-uses-reached: "&cEste código ha alcanzado su límite máximo de usos."
+  
+  # Admin messages
+  config-reloaded: "&a¡La configuración de Redeemify ha sido recargada!"
+  admin-error-notification: "&c[ERROR] %source%: %message%"
+  
+  # Language messages
+  current-language: "&eTu idioma actual es: &a%language%"
+  available-languages: "&eIdiomas disponibles:"
+  invalid-language: "&cIdioma inválido: &e%language%"
+  language-changed: "&aIdioma cambiado a: &e%language%"
+  
+  # Periodic codes
+  periodic-code-available: "&a[REDEEMIFY] &eNuevo código disponible: &a%code%"
+  
+  # Welcome message
+  welcome: "&a[REDEEMIFY] &e¡Bienvenido %player%! ¡Usa &a/redeemgui &epara canjear códigos!"
+  
+  # Error messages
+  error-occurred: "&cOcurrió un error al procesar tu solicitud."
+  command-failed: "&cError al ejecutar el comando de recompensa. Por favor contacta a un administrador."
+  
+  # Success messages
+  rewards-given: "&a¡Tus recompensas han sido otorgadas!"
+
+# GUI Messages
+gui:
+  common:
+    close: "&cCerrar"
+    close-lore: "&7Clic para cerrar este menú"
+    back: "&eAtrás"
+    back-lore: "&7Volver al menú anterior"
+    
+  player:
+    title: "&6🎁 Hub de Redeemify"
+    redeem-code: "&aCanjear Código"
+    redeem-code-lore: "&7Clic para canjear un código"
+    my-history: "&eHistorial de Canjes"
+    my-history-lore: "&7Ver tus códigos canjeados"
+    available-codes: "&bCódigos Disponibles"
+    available-codes-lore: "&7Ver qué códigos están disponibles"
+    language: "&dConfiguración de Idioma"
+    language-lore: "&7Cambiar tu preferencia de idioma"
+    history-info: "&eHas canjeado &a%count% &ecódigos. Último: &a%last_code%"
+    available-info: "&eHay &a%count% &ecódigos disponibles"
+    current-language: "&eTu idioma: &a%language%"
+    language-help: "&7Usa &e/language <código> &7para cambiar"
+    
+  admin:
+    title: "&4🔧 Panel de Admin"
+    statistics: "&eEstadísticas"
+    statistics-lore: "&7Ver estadísticas del plugin"
+    code-management: "&aGestión de Códigos"
+    code-management-lore: "&7Gestionar códigos de canje"
+    player-management: "&bGestión de Jugadores"
+    player-management-lore: "&7Gestionar datos de jugadores"
+    periodic-codes: "&dCódigos Periódicos"
+    periodic-codes-lore: "&7Gestionar códigos automáticos"
+    reload: "&cRecargar Config"
+    reload-lore: "&7Recargar configuración del plugin"
+    error-logs: "&6Registros de Errores"
+    error-logs-lore: "&7Ver errores recientes"
+    backup: "&9Gestión de Respaldos"
+    backup-lore: "&7Gestionar respaldos de datos"
+    plugin-info: "&fInformación del Plugin"
+    plugin-info-lore: "&7Ver detalles del plugin"
+    stats-display: "&eCanjes Totales: &a%d\n&eJugadores Únicos: &a%d\n&eCódigos Activos: &a%d\n&eCódigos Periódicos: &a%d"
+    code-management-info: "&eUsa los archivos de configuración para gestionar códigos"
+    player-management-info: "&eLos datos de jugadores se gestionan automáticamente"
+    periodic-info: "&eCódigos periódicos configurados: &a%count%"
+    reload-success: "&a¡Configuración recargada exitosamente!"
+    error-logs-info: "&eRevisa el archivo error-log.yml para detalles"
+    backup-info: "&eLos respaldos se crean automáticamente"
+    plugin-info-display: "&eVersión: &a%s\n&eAutor: &a%s"
+    
+  redeem:
+    title: "&a🎫 Canjear Código"
+    code-input: "&eEntrada de Código"
+    code-input-lore: "&7Clic para ingresar un código"
+    confirm: "&aConfirmar"
+    confirm-lore: "&7Canjear el código ingresado"
+    clear: "&cLimpiar"
+    clear-lore: "&7Limpiar el código actual"
+    instructions: "&bInstrucciones"
+    instructions-lore: "&7Cómo usar este menú"
+    no-code: "&c¡Por favor ingresa un código primero!"
+    enter-code: "&ePor favor escribe tu código en el chat:"
+    use-command: "&7O usa &e/redeem <código> &7directamente"
+    code-cleared: "&e¡Código limpiado!"
+    current-code: "&eCódigo Actual:"
+    no-code-entered: "&7Ningún código ingresado"
+    instructions-text: "&e¡Ingresa un código de canje y haz clic en confirmar para recibir tus recompensas!"

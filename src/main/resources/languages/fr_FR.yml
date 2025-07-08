@@ -1,0 +1,110 @@
+# French Language File for Redeemify
+# Plugin by Michael Brauer (Mxykl)
+
+language:
+  display-name: "Français"
+  code: "fr_FR"
+
+messages:
+  # Command messages
+  player-only: "&cCette commande ne peut être utilisée que par les joueurs!"
+  no-permission: "&cVous n'avez pas la permission d'utiliser cette commande!"
+  usage-redeem: "&cUtilisation: /redeem <code>"
+  
+  # Code redemption messages
+  code-redeemed: "&aCode échangé avec succès: &e%code%&a!"
+  invalid-code: "&cCode invalide! Veuillez vérifier l'orthographe."
+  code-expired: "&cCe code a expiré et ne peut plus être utilisé."
+  already-redeemed: "&cVous avez déjà échangé ce code!"
+  max-uses-reached: "&cCe code a atteint sa limite d'utilisation maximale."
+  
+  # Admin messages
+  config-reloaded: "&aLa configuration de Redeemify a été rechargée!"
+  admin-error-notification: "&c[ERREUR] %source%: %message%"
+  
+  # Language messages
+  current-language: "&eVotre langue actuelle est: &a%language%"
+  available-languages: "&eLangues disponibles:"
+  invalid-language: "&cLangue invalide: &e%language%"
+  language-changed: "&aLangue changée vers: &e%language%"
+  
+  # Periodic codes
+  periodic-code-available: "&a[REDEEMIFY] &eNouveau code disponible: &a%code%"
+  
+  # Welcome message
+  welcome: "&a[REDEEMIFY] &eBienvenue %player%! Utilisez &a/redeemgui &epour échanger des codes!"
+  
+  # Error messages
+  error-occurred: "&cUne erreur s'est produite lors du traitement de votre demande."
+  command-failed: "&cÉchec de l'exécution de la commande de récompense. Veuillez contacter un administrateur."
+  
+  # Success messages
+  rewards-given: "&aVos récompenses ont été données!"
+
+# GUI Messages
+gui:
+  common:
+    close: "&cFermer"
+    close-lore: "&7Cliquer pour fermer ce menu"
+    back: "&eRetour"
+    back-lore: "&7Retourner au menu précédent"
+    
+  player:
+    title: "&6🎁 Hub Redeemify"
+    redeem-code: "&aÉchanger un Code"
+    redeem-code-lore: "&7Cliquer pour échanger un code"
+    my-history: "&eHistorique des Échanges"
+    my-history-lore: "&7Voir vos codes échangés"
+    available-codes: "&bCodes Disponibles"
+    available-codes-lore: "&7Voir quels codes sont disponibles"
+    language: "&dParamètres de Langue"
+    language-lore: "&7Changer votre préférence de langue"
+    history-info: "&eVous avez échangé &a%count% &ecodes. Dernier: &a%last_code%"
+    available-info: "&eIl y a &a%count% &ecodes disponibles"
+    current-language: "&eVotre langue: &a%language%"
+    language-help: "&7Utilisez &e/language <code> &7pour changer"
+    
+  admin:
+    title: "&4🔧 Panneau Admin"
+    statistics: "&eStatistiques"
+    statistics-lore: "&7Voir les statistiques du plugin"
+    code-management: "&aGestion des Codes"
+    code-management-lore: "&7Gérer les codes d'échange"
+    player-management: "&bGestion des Joueurs"
+    player-management-lore: "&7Gérer les données des joueurs"
+    periodic-codes: "&dCodes Périodiques"
+    periodic-codes-lore: "&7Gérer les codes automatiques"
+    reload: "&cRecharger Config"
+    reload-lore: "&7Recharger la configuration du plugin"
+    error-logs: "&6Journaux d'Erreurs"
+    error-logs-lore: "&7Voir les erreurs récentes"
+    backup: "&9Gestion des Sauvegardes"
+    backup-lore: "&7Gérer les sauvegardes de données"
+    plugin-info: "&fInformations du Plugin"
+    plugin-info-lore: "&7Voir les détails du plugin"
+    stats-display: "&eÉchanges Totaux: &a%d\n&eJoueurs Uniques: &a%d\n&eCodes Actifs: &a%d\n&eCodes Périodiques: &a%d"
+    code-management-info: "&eUtilisez les fichiers de configuration pour gérer les codes"
+    player-management-info: "&eLes données des joueurs sont gérées automatiquement"
+    periodic-info: "&eCodes périodiques configurés: &a%count%"
+    reload-success: "&aConfiguration rechargée avec succès!"
+    error-logs-info: "&eVérifiez le fichier error-log.yml pour les détails"
+    backup-info: "&eLes sauvegardes sont créées automatiquement"
+    plugin-info-display: "&eVersion: &a%s\n&eAuteur: &a%s"
+    
+  redeem:
+    title: "&a🎫 Échanger un Code"
+    code-input: "&eSaisie de Code"
+    code-input-lore: "&7Cliquer pour entrer un code"
+    confirm: "&aConfirmer"
+    confirm-lore: "&7Échanger le code saisi"
+    clear: "&cEffacer"
+    clear-lore: "&7Effacer le code actuel"
+    instructions: "&bInstructions"
+    instructions-lore: "&7Comment utiliser ce menu"
+    no-code: "&cVeuillez d'abord entrer un code!"
+    enter-code: "&eVeuillez taper votre code dans le chat:"
+    use-command: "&7Ou utilisez &e/redeem <code> &7directement"
+    code-cleared: "&eCode effacé!"
+    current-code: "&eCode Actuel:"
+    no-code-entered: "&7Aucun code saisi"
+    instructions-text: "&eEntrez un code d'échange et cliquez sur confirmer pour recevoir vos récompenses!"

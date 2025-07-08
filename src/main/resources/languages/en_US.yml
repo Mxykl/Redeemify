@@ -1,0 +1,110 @@
+# English Language File for Redeemify
+# Plugin by Michael Brauer (Mxykl)
+
+language:
+  display-name: "English"
+  code: "en_US"
+
+messages:
+  # Command messages
+  player-only: "&cThis command can only be used by players!"
+  no-permission: "&cYou don't have permission to use this command!"
+  usage-redeem: "&cUsage: /redeem <code>"
+  
+  # Code redemption messages
+  code-redeemed: "&aSuccessfully redeemed code: &e%code%&a!"
+  invalid-code: "&cInvalid code! Please check your spelling."
+  code-expired: "&cThis code has expired and can no longer be used."
+  already-redeemed: "&cYou have already redeemed this code!"
+  max-uses-reached: "&cThis code has reached its maximum usage limit."
+  
+  # Admin messages
+  config-reloaded: "&aRedeemify configuration has been reloaded!"
+  admin-error-notification: "&c[ERROR] %source%: %message%"
+  
+  # Language messages
+  current-language: "&eYour current language is: &a%language%"
+  available-languages: "&eAvailable languages:"
+  invalid-language: "&cInvalid language: &e%language%"
+  language-changed: "&aLanguage changed to: &e%language%"
+  
+  # Periodic codes
+  periodic-code-available: "&a[REDEEMIFY] &eNew code available: &a%code%"
+  
+  # Welcome message
+  welcome: "&a[REDEEMIFY] &eWelcome %player%! Use &a/redeemgui &eto redeem codes!"
+  
+  # Error messages
+  error-occurred: "&cAn error occurred while processing your request."
+  command-failed: "&cFailed to execute reward command. Please contact an administrator."
+  
+  # Success messages
+  rewards-given: "&aYour rewards have been given!"
+
+# GUI Messages
+gui:
+  common:
+    close: "&cClose"
+    close-lore: "&7Click to close this menu"
+    back: "&eBack"
+    back-lore: "&7Return to previous menu"
+    
+  player:
+    title: "&6🎁 Redeemify Hub"
+    redeem-code: "&aRedeem Code"
+    redeem-code-lore: "&7Click to redeem a code"
+    my-history: "&eRedemption History"
+    my-history-lore: "&7View your redeemed codes"
+    available-codes: "&bAvailable Codes"
+    available-codes-lore: "&7See what codes are available"
+    language: "&dLanguage Settings"
+    language-lore: "&7Change your language preference"
+    history-info: "&eYou have redeemed &a%count% &ecodes. Last: &a%last_code%"
+    available-info: "&eThere are &a%count% &eavailable codes"
+    current-language: "&eYour language: &a%language%"
+    language-help: "&7Use &e/language <code> &7to change"
+    
+  admin:
+    title: "&4🔧 Admin Panel"
+    statistics: "&eStatistics"
+    statistics-lore: "&7View plugin statistics"
+    code-management: "&aCode Management"
+    code-management-lore: "&7Manage redemption codes"
+    player-management: "&bPlayer Management"
+    player-management-lore: "&7Manage player data"
+    periodic-codes: "&dPeriodic Codes"
+    periodic-codes-lore: "&7Manage automatic codes"
+    reload: "&cReload Config"
+    reload-lore: "&7Reload plugin configuration"
+    error-logs: "&6Error Logs"
+    error-logs-lore: "&7View recent errors"
+    backup: "&9Backup Management"
+    backup-lore: "&7Manage data backups"
+    plugin-info: "&fPlugin Information"
+    plugin-info-lore: "&7View plugin details"
+    stats-display: "&eTotal Redemptions: &a%d\n&eUnique Players: &a%d\n&eActive Codes: &a%d\n&ePeriodic Codes: &a%d"
+    code-management-info: "&eUse the config files to manage codes"
+    player-management-info: "&ePlayer data is automatically managed"
+    periodic-info: "&ePeriodic codes configured: &a%count%"
+    reload-success: "&aConfiguration reloaded successfully!"
+    error-logs-info: "&eCheck the error-log.yml file for details"
+    backup-info: "&eBackups are created automatically"
+    plugin-info-display: "&eVersion: &a%s\n&eAuthor: &a%s"
+    
+  redeem:
+    title: "&a🎫 Redeem Code"
+    code-input: "&eCode Input"
+    code-input-lore: "&7Click to enter a code"
+    confirm: "&aConfirm"
+    confirm-lore: "&7Redeem the entered code"
+    clear: "&cClear"
+    clear-lore: "&7Clear the current code"
+    instructions: "&bInstructions"
+    instructions-lore: "&7How to use this menu"
+    no-code: "&cPlease enter a code first!"
+    enter-code: "&ePlease type your code in chat:"
+    use-command: "&7Or use &e/redeem <code> &7directly"
+    code-cleared: "&eCode cleared!"
+    current-code: "&eCurrent Code:"
+    no-code-entered: "&7No code entered"
+    instructions-text: "&eEnter a redemption code and click confirm to redeem your rewards!"

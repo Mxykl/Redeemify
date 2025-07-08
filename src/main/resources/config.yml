@@ -12,6 +12,55 @@ settings:
   # Date format for expiration dates (used in codes.yml)
   date-format: "yyyy-MM-dd HH:mm"
 
+# Periodic codes configuration
+periodic-codes:
+  # Enable periodic code system
+  enabled: true
+  
+  # Notify players when new periodic codes are available
+  notify-players: true
+  
+  # Example periodic codes (remove or modify as needed)
+  daily-reward:
+    pattern: "DAILY_%date%"
+    schedule: "0 0 * * *"  # Daily at midnight (cron format)
+    duration: "23h 59m"
+    max-uses: -1
+    per-player: true
+    auto-reset: true
+    enabled: true
+    commands:
+      - "economy: 100"
+      - "tell %player% You received your daily reward!"
+      
+  weekend-bonus:
+    pattern: "WEEKEND_%week%"
+    schedule: "0 0 * * 6"  # Every Saturday
+    duration: "48h"
+    max-uses: 1000
+    per-player: true
+    auto-reset: false
+    enabled: false
+    commands:
+      - "economy: 500"
+      - "permission: weekend.bonus.7d"
+
+# GUI settings
+gui:
+  # Show available codes to players (security consideration)
+  show-available-codes: false
+  
+  # GUI sounds
+  sounds:
+    click: "UI_BUTTON_CLICK"
+    success: "ENTITY_PLAYER_LEVELUP"
+    error: "ENTITY_VILLAGER_NO"
+
+# Welcome message settings
+welcome-message:
+  enabled: true
+  delay: 3  # seconds after join
+
 # Database settings (for future use)
 database:
   # Database type: file, mysql, sqlite
@@ -32,3 +81,20 @@ performance:
   
   # Enable async data saving
   async-save: true
+
+# Error handling and recovery
+error-handling:
+  # Automatically create backups
+  auto-backup: true
+  
+  # Maximum number of backups to keep
+  max-backups: 10
+  
+  # Number of retry attempts for failed operations
+  retry-attempts: 3
+  
+  # Notify admins of errors
+  notify-admins: true
+  
+  # Enable fallback mode when errors occur
+  fallback-mode: true

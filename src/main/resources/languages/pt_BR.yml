@@ -1,0 +1,110 @@
+# Portuguese (Brazil) Language File for Redeemify
+# Plugin by Michael Brauer (Mxykl)
+
+language:
+  display-name: "Português (Brasil)"
+  code: "pt_BR"
+
+messages:
+  # Command messages
+  player-only: "&cEste comando só pode ser usado por jogadores!"
+  no-permission: "&cVocê não tem permissão para usar este comando!"
+  usage-redeem: "&cUso: /redeem <código>"
+  
+  # Code redemption messages
+  code-redeemed: "&aCódigo resgatado com sucesso: &e%code%&a!"
+  invalid-code: "&cCódigo inválido! Por favor verifique a ortografia."
+  code-expired: "&cEste código expirou e não pode mais ser usado."
+  already-redeemed: "&cVocê já resgatou este código!"
+  max-uses-reached: "&cEste código atingiu seu limite máximo de usos."
+  
+  # Admin messages
+  config-reloaded: "&aA configuração do Redeemify foi recarregada!"
+  admin-error-notification: "&c[ERRO] %source%: %message%"
+  
+  # Language messages
+  current-language: "&eSeu idioma atual é: &a%language%"
+  available-languages: "&eIdiomas disponíveis:"
+  invalid-language: "&cIdioma inválido: &e%language%"
+  language-changed: "&aIdioma alterado para: &e%language%"
+  
+  # Periodic codes
+  periodic-code-available: "&a[REDEEMIFY] &eNovo código disponível: &a%code%"
+  
+  # Welcome message
+  welcome: "&a[REDEEMIFY] &eBem-vindo %player%! Use &a/redeemgui &epara resgatar códigos!"
+  
+  # Error messages
+  error-occurred: "&cOcorreu um erro ao processar sua solicitação."
+  command-failed: "&cFalha ao executar comando de recompensa. Por favor contate um administrador."
+  
+  # Success messages
+  rewards-given: "&aSuas recompensas foram dadas!"
+
+# GUI Messages
+gui:
+  common:
+    close: "&cFechar"
+    close-lore: "&7Clique para fechar este menu"
+    back: "&eVoltar"
+    back-lore: "&7Retornar ao menu anterior"
+    
+  player:
+    title: "&6🎁 Hub do Redeemify"
+    redeem-code: "&aResgatar Código"
+    redeem-code-lore: "&7Clique para resgatar um código"
+    my-history: "&eHistórico de Resgates"
+    my-history-lore: "&7Ver seus códigos resgatados"
+    available-codes: "&bCódigos Disponíveis"
+    available-codes-lore: "&7Ver quais códigos estão disponíveis"
+    language: "&dConfigurações de Idioma"
+    language-lore: "&7Alterar sua preferência de idioma"
+    history-info: "&eVocê resgatou &a%count% &ecódigos. Último: &a%last_code%"
+    available-info: "&eExistem &a%count% &ecódigos disponíveis"
+    current-language: "&eSeu idioma: &a%language%"
+    language-help: "&7Use &e/language <código> &7para alterar"
+    
+  admin:
+    title: "&4🔧 Painel Admin"
+    statistics: "&eEstatísticas"
+    statistics-lore: "&7Ver estatísticas do plugin"
+    code-management: "&aGerenciamento de Códigos"
+    code-management-lore: "&7Gerenciar códigos de resgate"
+    player-management: "&bGerenciamento de Jogadores"
+    player-management-lore: "&7Gerenciar dados de jogadores"
+    periodic-codes: "&dCódigos Periódicos"
+    periodic-codes-lore: "&7Gerenciar códigos automáticos"
+    reload: "&cRecarregar Config"
+    reload-lore: "&7Recarregar configuração do plugin"
+    error-logs: "&6Logs de Erro"
+    error-logs-lore: "&7Ver erros recentes"
+    backup: "&9Gerenciamento de Backup"
+    backup-lore: "&7Gerenciar backups de dados"
+    plugin-info: "&fInformações do Plugin"
+    plugin-info-lore: "&7Ver detalhes do plugin"
+    stats-display: "&eResgates Totais: &a%d\n&eJogadores Únicos: &a%d\n&eCódigos Ativos: &a%d\n&eCódigos Periódicos: &a%d"
+    code-management-info: "&eUse os arquivos de configuração para gerenciar códigos"
+    player-management-info: "&eDados de jogadores são gerenciados automaticamente"
+    periodic-info: "&eCódigos periódicos configurados: &a%count%"
+    reload-success: "&aConfiguração recarregada com sucesso!"
+    error-logs-info: "&eVerifique o arquivo error-log.yml para detalhes"
+    backup-info: "&eBackups são criados automaticamente"
+    plugin-info-display: "&eVersão: &a%s\n&eAutor: &a%s"
+    
+  redeem:
+    title: "&a🎫 Resgatar Código"
+    code-input: "&eEntrada de Código"
+    code-input-lore: "&7Clique para inserir um código"
+    confirm: "&aConfirmar"
+    confirm-lore: "&7Resgatar o código inserido"
+    clear: "&cLimpar"
+    clear-lore: "&7Limpar o código atual"
+    instructions: "&bInstruções"
+    instructions-lore: "&7Como usar este menu"
+    no-code: "&cPor favor insira um código primeiro!"
+    enter-code: "&ePor favor digite seu código no chat:"
+    use-command: "&7Ou use &e/redeem <código> &7diretamente"
+    code-cleared: "&eCódigo limpo!"
+    current-code: "&eCódigo Atual:"
+    no-code-entered: "&7Nenhum código inserido"
+    instructions-text: "&eInsira um código de resgate e clique em confirmar para receber suas recompensas!"

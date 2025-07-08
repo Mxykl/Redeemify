@@ -17,10 +17,29 @@ commands:
     usage: /redeemify <reload|info>
     permission: redeemify.admin
     aliases: [rd]
+  redeemgui:
+    description: Open the redemption GUI
+    usage: /redeemgui [admin]
+    permission: redeemify.gui
+    aliases: [rgui, redeem-gui]
+  language:
+    description: Change your language preference
+    usage: /language [language_code]
+    permission: redeemify.language
+    aliases: [lang, setlang]
 
 permissions:
   redeemify.redeem:
     description: Allows players to redeem codes
+    default: true
+  redeemify.gui:
+    description: Allows players to use the GUI
+    default: true
+  redeemify.language:
+    description: Allows players to change their language
+    default: true
+  redeemify.notifications:
+    description: Receive notifications about new codes
     default: true
   redeemify.admin:
     description: Allows access to admin commands
@@ -30,4 +49,7 @@ permissions:
     default: op
     children:
       redeemify.redeem: true
+      redeemify.gui: true
+      redeemify.language: true
+      redeemify.notifications: true
       redeemify.admin: true

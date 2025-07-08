@@ -153,4 +153,35 @@ public class DataManager {
     public Set<String> getAllRedeemedCodes() {
         return new HashSet<>(codeUsages.keySet());
     }
+
+    // Enhanced methods for new features
+    public int getPlayerRedeemedCount(String playerUUID) {
+        return playerRedeemed.getOrDefault(playerUUID, new HashSet<>()).size();
+    }
+
+    public String getLastRedeemedCode(String playerUUID) {
+        Set<String> codes = playerRedeemed.get(playerUUID);
+        if (codes == null || codes.isEmpty()) return null;
+        
+        // Return the last code (this is simplified - in production, store timestamps)
+        return codes.iterator().next();
+    }
+
+    public void resetPeriodicCodeData(String periodicCodeName) {
+        // Reset player redemptions for periodic codes
+        for (Set<String> codes : playerRedeemed.values()) {
+            codes.removeIf(code -> code.startsWith(periodicCodeName));
+        }
+        
+        // Reset usage data for periodic codes
+        codeUsages.entrySet().removeIf(entry -> entry.getKey().startsWith(periodicCodeName));
+    }
+
+    public Map<String, Set<String>> getAllPlayerRedemptions() {
+        return new HashMap<>(playerRedeemed);
+    }
+
+    public Map<String, Integer> getAllCodeUsages() {
+        return new HashMap<>(codeUsages);
+    }
 }

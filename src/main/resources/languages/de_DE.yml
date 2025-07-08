@@ -1,0 +1,110 @@
+# German Language File for Redeemify
+# Plugin by Michael Brauer (Mxykl)
+
+language:
+  display-name: "Deutsch"
+  code: "de_DE"
+
+messages:
+  # Command messages
+  player-only: "&cDieser Befehl kann nur von Spielern verwendet werden!"
+  no-permission: "&cDu hast keine Berechtigung für diesen Befehl!"
+  usage-redeem: "&cVerwendung: /redeem <code>"
+  
+  # Code redemption messages
+  code-redeemed: "&aCode erfolgreich eingelöst: &e%code%&a!"
+  invalid-code: "&cUngültiger Code! Bitte überprüfe die Schreibweise."
+  code-expired: "&cDieser Code ist abgelaufen und kann nicht mehr verwendet werden."
+  already-redeemed: "&cDu hast diesen Code bereits eingelöst!"
+  max-uses-reached: "&cDieser Code hat sein maximales Nutzungslimit erreicht."
+  
+  # Admin messages
+  config-reloaded: "&aRedeemify Konfiguration wurde neu geladen!"
+  admin-error-notification: "&c[FEHLER] %source%: %message%"
+  
+  # Language messages
+  current-language: "&eDeine aktuelle Sprache ist: &a%language%"
+  available-languages: "&eVerfügbare Sprachen:"
+  invalid-language: "&cUngültige Sprache: &e%language%"
+  language-changed: "&aSprache geändert zu: &e%language%"
+  
+  # Periodic codes
+  periodic-code-available: "&a[REDEEMIFY] &eNeuer Code verfügbar: &a%code%"
+  
+  # Welcome message
+  welcome: "&a[REDEEMIFY] &eWillkommen %player%! Nutze &a/redeemgui &eum Codes einzulösen!"
+  
+  # Error messages
+  error-occurred: "&cEin Fehler ist bei der Verarbeitung deiner Anfrage aufgetreten."
+  command-failed: "&cFehler beim Ausführen des Belohnungsbefehls. Bitte kontaktiere einen Administrator."
+  
+  # Success messages
+  rewards-given: "&aDeine Belohnungen wurden vergeben!"
+
+# GUI Messages
+gui:
+  common:
+    close: "&cSchließen"
+    close-lore: "&7Klicken zum Schließen"
+    back: "&eZurück"
+    back-lore: "&7Zum vorherigen Menü zurückkehren"
+    
+  player:
+    title: "&6🎁 Redeemify Hub"
+    redeem-code: "&aCode einlösen"
+    redeem-code-lore: "&7Klicken um einen Code einzulösen"
+    my-history: "&eEinlöse-Verlauf"
+    my-history-lore: "&7Deine eingelösten Codes anzeigen"
+    available-codes: "&bVerfügbare Codes"
+    available-codes-lore: "&7Verfügbare Codes anzeigen"
+    language: "&dSpracheinstellungen"
+    language-lore: "&7Spracheinstellung ändern"
+    history-info: "&eDu hast &a%count% &eCodes eingelöst. Letzter: &a%last_code%"
+    available-info: "&eEs gibt &a%count% &everfügbare Codes"
+    current-language: "&eDeine Sprache: &a%language%"
+    language-help: "&7Nutze &e/language <code> &7zum Ändern"
+    
+  admin:
+    title: "&4🔧 Admin Panel"
+    statistics: "&eStatistiken"
+    statistics-lore: "&7Plugin-Statistiken anzeigen"
+    code-management: "&aCode-Verwaltung"
+    code-management-lore: "&7Einlöse-Codes verwalten"
+    player-management: "&bSpieler-Verwaltung"
+    player-management-lore: "&7Spielerdaten verwalten"
+    periodic-codes: "&dPeriodische Codes"
+    periodic-codes-lore: "&7Automatische Codes verwalten"
+    reload: "&cKonfiguration neu laden"
+    reload-lore: "&7Plugin-Konfiguration neu laden"
+    error-logs: "&6Fehler-Logs"
+    error-logs-lore: "&7Aktuelle Fehler anzeigen"
+    backup: "&9Backup-Verwaltung"
+    backup-lore: "&7Daten-Backups verwalten"
+    plugin-info: "&fPlugin-Informationen"
+    plugin-info-lore: "&7Plugin-Details anzeigen"
+    stats-display: "&eGesamte Einlösungen: &a%d\n&eEindeutige Spieler: &a%d\n&eAktive Codes: &a%d\n&ePeriodische Codes: &a%d"
+    code-management-info: "&eNutze die Konfigurationsdateien zur Code-Verwaltung"
+    player-management-info: "&eSpielerdaten werden automatisch verwaltet"
+    periodic-info: "&eKonfigurierte periodische Codes: &a%count%"
+    reload-success: "&aKonfiguration erfolgreich neu geladen!"
+    error-logs-info: "&ePrüfe die error-log.yml Datei für Details"
+    backup-info: "&eBackups werden automatisch erstellt"
+    plugin-info-display: "&eVersion: &a%s\n&eAutor: &a%s"
+    
+  redeem:
+    title: "&a🎫 Code einlösen"
+    code-input: "&eCode-Eingabe"
+    code-input-lore: "&7Klicken um einen Code einzugeben"
+    confirm: "&aBestätigen"
+    confirm-lore: "&7Den eingegebenen Code einlösen"
+    clear: "&cLöschen"
+    clear-lore: "&7Aktuellen Code löschen"
+    instructions: "&bAnweisungen"
+    instructions-lore: "&7Wie man dieses Menü benutzt"
+    no-code: "&cBitte gib zuerst einen Code ein!"
+    enter-code: "&eBitte gib deinen Code im Chat ein:"
+    use-command: "&7Oder nutze &e/redeem <code> &7direkt"
+    code-cleared: "&eCode gelöscht!"
+    current-code: "&eAktueller Code:"
+    no-code-entered: "&7Kein Code eingegeben"
+    instructions-text: "&eGib einen Einlöse-Code ein und klicke auf Bestätigen um deine Belohnungen zu erhalten!"
