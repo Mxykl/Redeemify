@@ -1,26 +1,42 @@
-# Redeemify Messages Configuration
-# Plugin by Michael Brauer (Mxykl)
-# Use & for color codes
+# ═══════════════════════════════════════════════════════════════
+#                    🎁 REDEEMIFY MESSAGES 🎁
+#                   Created by Michael Brauer (Mxykl)
+# ═══════════════════════════════════════════════════════════════
 
 messages:
-  # Command messages
-  player-only: "&cThis command can only be used by players!"
-  no-permission: "&cYou don't have permission to use this command!"
-  usage-redeem: "&cUsage: /redeem <code>"
+  # ═══════════════════════════════════════════════════════════════
+  #                        ACCESS CONTROL
+  # ═══════════════════════════════════════════════════════════════
   
-  # Code redemption messages
-  code-redeemed: "&aSuccessfully redeemed code: &e%code%&a!"
-  invalid-code: "&cInvalid code! Please check your spelling."
-  code-expired: "&cThis code has expired and can no longer be used."
-  already-redeemed: "&cYou have already redeemed this code!"
-  max-uses-reached: "&cThis code has reached its maximum usage limit."
+  player-only: "&c&l⚠ &fThis command can only be used by &b&lplayers&f!"
+  no-permission: "&c&l🔒 &fYou don't have &d&lpermission &fto use this command!"
+  usage-redeem: "&b&l💡 Usage: &f/redeem &e&l<code> &7(Example: &f/redeem &e&lWELCOME2024&7)"
+
+  # ═══════════════════════════════════════════════════════════════
+  #                        CODE REDEMPTION
+  # ═══════════════════════════════════════════════════════════════
   
-  # Admin messages
-  config-reloaded: "&aRedeemify configuration has been reloaded!"
+  code-redeemed: "&a&l✨ SUCCESS! &fCode &e&l%code% &fredeemed! &d&l🎁 Rewards given!"
+  invalid-code: "&c&l❌ INVALID CODE! &fPlease check your spelling and try again."
+  code-expired: "&6&l⏰ EXPIRED! &fThis code is no longer available."
+  already-redeemed: "&c&l🚫 ALREADY USED! &fYou've already redeemed this code!"
+  max-uses-reached: "&c&l📊 LIMIT REACHED! &fThis code has been used too many times."
   
-  # Error messages
-  error-occurred: "&cAn error occurred while processing your request."
-  command-failed: "&cFailed to execute reward command. Please contact an administrator."
+  # ═══════════════════════════════════════════════════════════════
+  #                        ADMIN MESSAGES
+  # ═══════════════════════════════════════════════════════════════
   
-  # Success messages
-  rewards-given: "&aYour rewards have been given!"
+  config-reloaded: "&a&l🔄 RELOADED! &fRedeemify configuration updated successfully!"
+  
+  # ═══════════════════════════════════════════════════════════════
+  #                        ERROR HANDLING
+  # ═══════════════════════════════════════════════════════════════
+  
+  error-occurred: "&c&l⚠ ERROR! &fSomething went wrong. Please contact an administrator."
+  command-failed: "&c&l❌ COMMAND FAILED! &fReward execution failed. Contact support."
+  
+  # ═══════════════════════════════════════════════════════════════
+  #                        SUCCESS MESSAGES
+  # ═══════════════════════════════════════════════════════════════
+  
+  rewards-given: "&a&l🎉 REWARDS DELIVERED! &fEnjoy your prizes!"
