@@ -41,14 +41,18 @@ public final class Redeemify extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         try {
-            // Initialize core managers first
-            this.errorManager = new ErrorManager(this);
+            // Initialize core managers first - ConfigManager must be first!
             this.configManager = new ConfigManager(this);
+            
+            // Load configurations first
+            configManager.loadConfigs();
+            
+            // Now initialize ErrorManager after ConfigManager is ready
+            this.errorManager = new ErrorManager(this);
             this.languageManager = new LanguageManager(this);
             this.dataManager = new DataManager(this);
 
-            // Load configurations and data
-            configManager.loadConfigs();
+            // Load remaining configurations and data
             languageManager.loadLanguages();
             dataManager.loadData();
 
