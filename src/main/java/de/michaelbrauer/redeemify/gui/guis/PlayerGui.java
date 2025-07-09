@@ -41,7 +41,7 @@ public class PlayerGui extends BaseGui {
 
         // Language Selection
         inventory.setItem(22, createItem(
-                Material.GLOBE_BANNER_PATTERN,
+                Material.COMPASS,
                 "gui.player.language",
                 "gui.player.language-lore"
         ));

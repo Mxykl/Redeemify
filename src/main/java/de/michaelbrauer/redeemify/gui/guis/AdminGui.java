@@ -16,7 +16,7 @@ public class AdminGui extends BaseGui {
     protected void setupGui() {
         // Statistics
         inventory.setItem(10, createItem(
-                Material.CHART,
+                Material.MAP,
                 "gui.admin.statistics",
                 "gui.admin.statistics-lore"
         ));
@@ -65,7 +65,7 @@ public class AdminGui extends BaseGui {
 
         // Plugin Info
         inventory.setItem(34, createItem(
-                Material.INFORMATION_BOOK,
+                Material.BOOK,
                 "gui.admin.plugin-info",
                 "gui.admin.plugin-info-lore"
         ));
